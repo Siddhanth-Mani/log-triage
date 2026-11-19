@@ -4,6 +4,8 @@ A command-line tool that reads SSH auth logs and web server access logs and tell
 
 **Sample report:** https://siddhanth-mani.github.io/log-triage/ (made from the generated logs in [`samples/`](samples/))
 
+![Sample HTML report: totals, then findings ranked critical, high and medium with evidence](docs/report.jpg)
+
 I built it for the first ten minutes after "something looks wrong on the server", when you want the important lines out of a few thousand before deciding what to do next. It is standard-library Python with no dependencies, so it runs on whatever box the logs are on.
 
 ```
