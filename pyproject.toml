@@ -7,7 +7,7 @@ name = "log-triage"
 version = "1.0.0"
 description = "Find brute force, account compromise, scanners and injection attempts in SSH and web server logs"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "Siddhanth Kartik Mani" }]
 keywords = ["security", "logs", "ssh", "nginx", "incident-response", "blue-team"]

@@ -27,7 +27,7 @@ HIGH     SSH brute force from 203.0.113.45
 
 ## Install
 
-Python 3.9 or newer.
+Python 3.10 or newer.
 
 ```
 pip install git+https://github.com/Siddhanth-Mani/log-triage
@@ -88,7 +88,7 @@ Times are reported as written in the logs, which is normally the server's local 
 python -m unittest discover -s tests -t .
 ```
 
-31 tests cover the parsers (both timestamp styles, IPv6, repeated-message lines, malformed input, year rollover), every rule including the cases that must not fire (a slow trickle of failures, a success from a different address, ordinary URLs that happen to contain words like "union" or "select"), HTML escaping of hostile log content, and the command line. GitHub Actions runs them on Python 3.9, 3.11 and 3.13.
+31 tests cover the parsers (both timestamp styles, IPv6, repeated-message lines, malformed input, year rollover), every rule including the cases that must not fire (a slow trickle of failures, a success from a different address, ordinary URLs that happen to contain words like "union" or "select"), HTML escaping of hostile log content, and the command line. GitHub Actions runs them on Python 3.10, 3.12 and 3.13.
 
 `python samples/make_samples.py` regenerates the sample logs. They are seeded, so the output is the same each time, and every address in them is from the documentation ranges (192.0.2.0/24, 198.51.100.0/24, 203.0.113.0/24).
 
