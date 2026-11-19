@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "log-triage"
+version = "1.0.0"
+description = "Find brute force, account compromise, scanners and injection attempts in SSH and web server logs"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Siddhanth Kartik Mani" }]
+keywords = ["security", "logs", "ssh", "nginx", "incident-response", "blue-team"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Environment :: Console",
+  "Topic :: Security",
+  "Topic :: System :: Logging",
+]
+
+[project.scripts]
+log-triage = "logtriage.cli:main"
+
+[project.urls]
+Source = "https://github.com/Siddhanth-Mani/log-triage"
+"Sample report" = "https://siddhanth-mani.github.io/log-triage/"
+
+[tool.setuptools]
+packages = ["logtriage"]
